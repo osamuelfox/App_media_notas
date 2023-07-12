@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MediaDeNotas</string>
+    <string name="nome">Nome</string>
+    <string name="matematica">Matematica</string>
+    <string name="portugues">Português</string>
+    <string name="geografia">Geografia</string>
+</resources>

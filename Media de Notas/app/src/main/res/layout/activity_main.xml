@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Média Escolar"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/edit_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nome"
+                android:inputType="textPersonName"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/text_matematica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matematica"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/primeiroBimestre_matematica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1° Bimestre"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_margin="7dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/segundoBimestre_matematica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/terceiroBimestre_matematica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quartoBimestre_matematica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/edit_nota1_matematica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota2_matematica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota3_matematica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota4_matematica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_portugues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Português"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/primeiroBimestre_portugues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1° Bimestre"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_margin="7dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/segundoBimestre_portugues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/terceiroBimestre_portugues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quartoBimestre_portugues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/edit_nota1_portugues"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota2_portugues"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota3_portugues"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota4_portugues"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_geografia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geografia"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/primeiroBimestre_geografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1° Bimestre"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_margin="7dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/segundoBimestre_geografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/terceiroBimestre_geografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quartoBimestre_geografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/edit_nota1_geografia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota2_geografia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota3_geografia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota4_geografia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_historia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="História"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/primeiroBimestre_historia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1° Bimestre"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_margin="7dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/segundoBimestre_historia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/terceiroBimestre_historia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quartoBimestre_historia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/edit_nota1_historia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota2_historia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota3_historia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota4_historia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_fisica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Física"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/primeiroBimestre_fisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1° Bimestre"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/segundoBimestre_fisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/terceiroBimestre_fisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quartoBimestre_fisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4° Bimestre"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"
+                    android:textSize="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/edit_nota1_fisica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota2_fisica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota3_fisica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_nota4_fisica"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:layout_margin="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/bt_salvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:layout_margin="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
