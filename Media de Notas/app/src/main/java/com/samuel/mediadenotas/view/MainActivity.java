@@ -14,11 +14,13 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edit_nota1_portugues, edit_nota2_portugues, edit_nota3_portugues, edit_nota4_portugues;
 
-    EditText edit_nota1_matematica,edit_nota2_matematica,edit_nota3_matematica,edit_nota4_matematica;
+    EditText edit_nota1_matematica, edit_nota2_matematica, edit_nota3_matematica, edit_nota4_matematica;
 
-    EditText edit_nota1_geografia, edit_nota2_geografia,edit_nota3_geografia,edit_nota4_geografia;
+    EditText edit_nota1_geografia, edit_nota2_geografia, edit_nota3_geografia, edit_nota4_geografia;
 
     EditText edit_nota1_historia, edit_nota2_historia, edit_nota3_historia, edit_nota4_historia;
+
+    EditText edit_nota1_fisica, edit_nota2_fisica, edit_nota3_fisica, edit_nota4_fisica;
 
     Button bt_calcular;
     TextView text_resultado;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         iniciandoMatematica();
         iniciandoGeografia();
         iniciandoHistoria();
+        iniciandoFisica();
 
         bt_calcular();
     }
@@ -48,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void resultado(){
+    private void resultado() {
 
-        text_resultado.setText(notasPortugues() + "\n" + notasMatematica() + "\n" + notasGeografia() + "\n" + notasHistoria());
+        text_resultado.setText(notasPortugues() + "\n" + notasMatematica() + "\n" + notasGeografia() + "\n" + notasHistoria() + "\n" + notasFisica());
     }
 
     private double CalcularMedia(double nota1, double nota2, double nota3, double nota4) {
@@ -67,10 +70,9 @@ public class MainActivity extends AppCompatActivity {
         double mediaPortugues = CalcularMedia(nota1, nota2, nota3, nota4);
         String resultado = null;
 
-        if (mediaPortugues >= 6){
+        if (mediaPortugues >= 6) {
             resultado = ("Portugues " + mediaPortugues + " Aluno Aprovado");
-        }
-        else if (mediaPortugues < 5){
+        } else if (mediaPortugues < 5) {
             resultado = ("Portugues " + mediaPortugues + " Aluno Reprovado");
         }
         return resultado;
@@ -92,10 +94,9 @@ public class MainActivity extends AppCompatActivity {
         double mediaMatematica = CalcularMedia(nota1, nota2, nota3, nota4);
         String resultado = null;
 
-        if (mediaMatematica >= 6){
+        if (mediaMatematica >= 6) {
             resultado = ("Matemaica " + mediaMatematica + " Aluno Aprovado");
-        }
-        else if (mediaMatematica < 5){
+        } else if (mediaMatematica < 5) {
             resultado = ("Matematica " + mediaMatematica + " Aluno Reprovado");
         }
         return resultado;
@@ -117,10 +118,9 @@ public class MainActivity extends AppCompatActivity {
         double mediaGeografia = CalcularMedia(nota1, nota2, nota3, nota4);
         String resultado = null;
 
-        if (mediaGeografia >= 6){
+        if (mediaGeografia >= 6) {
             resultado = ("Geografia " + mediaGeografia + " Aluno Aprovado");
-        }
-        else if (mediaGeografia < 5){
+        } else if (mediaGeografia < 5) {
             resultado = ("Geografia " + mediaGeografia + " Aluno Reprovado");
         }
         return resultado;
@@ -142,10 +142,9 @@ public class MainActivity extends AppCompatActivity {
         double mediaHistoria = CalcularMedia(nota1, nota2, nota3, nota4);
         String resultado = null;
 
-        if (mediaHistoria >= 6){
+        if (mediaHistoria >= 6) {
             resultado = ("Historia " + mediaHistoria + " Aluno Aprovado");
-        }
-        else if (mediaHistoria < 5){
+        } else if (mediaHistoria < 5) {
             resultado = ("Historia " + mediaHistoria + " Aluno Reprovado");
         }
         return resultado;
@@ -156,5 +155,30 @@ public class MainActivity extends AppCompatActivity {
         edit_nota2_historia = findViewById(R.id.edit_nota2_historia);
         edit_nota3_historia = findViewById(R.id.edit_nota3_historia);
         edit_nota4_historia = findViewById(R.id.edit_nota4_historia);
+    }
+
+
+    private String notasFisica() {
+        double nota1 = Double.parseDouble(edit_nota1_fisica.getText().toString());
+        double nota2 = Double.parseDouble(edit_nota2_fisica.getText().toString());
+        double nota3 = Double.parseDouble(edit_nota3_fisica.getText().toString());
+        double nota4 = Double.parseDouble(edit_nota4_fisica.getText().toString());
+
+        double mediaFisica = CalcularMedia(nota1, nota2, nota3, nota4);
+        String resultado = null;
+
+        if (mediaFisica >= 6) {
+            resultado = ("Fisica " + mediaFisica + " Aluno Aprovado");
+        } else if (mediaFisica < 5) {
+            resultado = ("Fisica " + mediaFisica + " Aluno Reprovado");
+        }
+        return resultado;
+    }
+
+    private void iniciandoFisica() {
+        edit_nota1_fisica = findViewById(R.id.edit_nota1_fisica);
+        edit_nota2_fisica = findViewById(R.id.edit_nota2_fisica);
+        edit_nota3_fisica = findViewById(R.id.edit_nota3_fisica);
+        edit_nota4_fisica = findViewById(R.id.edit_nota4_fisica);
     }
 }
