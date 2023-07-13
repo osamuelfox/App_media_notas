@@ -23,7 +23,7 @@ public class ControllerNotas {
 
         if (mediaPortugues >= 6) {
             resultado = ("Portugues " + mediaPortugues + " Aluno Aprovado");
-        } else if (mediaPortugues < 5) {
+        } else if (mediaPortugues < 6) {
             resultado = ("Portugues " + mediaPortugues + " Aluno Reprovado");
         }
         return resultado;

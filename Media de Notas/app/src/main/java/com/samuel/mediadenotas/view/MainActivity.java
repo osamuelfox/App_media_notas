@@ -55,19 +55,24 @@ public class MainActivity extends AppCompatActivity {
         bt_calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                port();
+                resultado();
             }
         });
     }
 
+    private void resultado(){
 
-    private void port() {
+        text_resultado.setText(port());
+
+    }
+
+    private String port() {
         double nota1 = Double.parseDouble(edit_nota1_portugues.getText().toString());
         double nota2 = Double.parseDouble(edit_nota2_portugues.getText().toString());
         double nota3 = Double.parseDouble(edit_nota3_portugues.getText().toString());
         double nota4 = Double.parseDouble(edit_nota4_portugues.getText().toString());
 
-        String result;
+        String resultPortugues;
 
         portugues.setEdit_nota1_portugues(String.valueOf(nota1));
         portugues.setEdit_nota2_portugues(String.valueOf(nota2));
@@ -75,8 +80,9 @@ public class MainActivity extends AppCompatActivity {
         portugues.setEdit_nota4_portugues(String.valueOf(nota4));
         portugues.getMediaPortugues();
 
-        result = controllerNotas.calculoPortugues(portugues);
-        text_resultado.setText(result);
+        resultPortugues = controllerNotas.calculoPortugues(portugues);
+
+        return resultPortugues;
     }
 
 //    private double CalcularMedia(double nota1, double nota2, double nota3, double nota4) {
