@@ -21,50 +21,45 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="Média Escolar"
                 android:textSize="20dp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/edit_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:ems="10"
                 android:hint="@string/nome"
-                android:inputType="textPersonName"
-                android:layout_margin="10dp"
-                />
-
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/text_matematica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Matematica"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Matematica"
                 android:textSize="17sp"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/primeiroBimestre_matematica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1° Bimestre"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
                     android:layout_margin="7dp"
+                    android:text="1° Bimestre"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
 
                     />
 
@@ -72,41 +67,37 @@
                     android:id="@+id/segundoBimestre_matematica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="2° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terceiroBimestre_matematica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="3° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/quartoBimestre_matematica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
+                    android:text="4° Bimestre"
                     android:textSize="15dp"
-                    />
-
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <EditText
                     android:id="@+id/edit_nota1_matematica"
@@ -114,7 +105,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -123,7 +114,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -132,7 +123,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -141,39 +132,35 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
-
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/text_portugues"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Português"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Português"
                 android:textSize="17sp"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/primeiroBimestre_portugues"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1° Bimestre"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
                     android:layout_margin="7dp"
+                    android:text="1° Bimestre"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
 
                     />
 
@@ -181,41 +168,36 @@
                     android:id="@+id/segundoBimestre_portugues"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="2° Bimestre"
                     android:textSize="15dp"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terceiroBimestre_portugues"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="10dp"
-
+                    android:text="3° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/quartoBimestre_portugues"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
+                    android:text="4° Bimestre"
                     android:textSize="15dp"
-                    />
-
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <EditText
                     android:id="@+id/edit_nota1_portugues"
@@ -223,7 +205,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -232,7 +214,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -241,7 +223,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -250,9 +232,8 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
-
 
             </LinearLayout>
 
@@ -260,28 +241,26 @@
                 android:id="@+id/text_geografia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Geografia"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Geografia"
                 android:textSize="17sp"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/primeiroBimestre_geografia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1° Bimestre"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
                     android:layout_margin="7dp"
+                    android:text="1° Bimestre"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
 
                     />
 
@@ -289,41 +268,36 @@
                     android:id="@+id/segundoBimestre_geografia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="2° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terceiroBimestre_geografia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="3° Bimestre"
                     android:textSize="15dp"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/quartoBimestre_geografia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
+                    android:text="4° Bimestre"
                     android:textSize="15dp"
-                    />
-
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <EditText
                     android:id="@+id/edit_nota1_geografia"
@@ -331,7 +305,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -340,7 +314,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -349,7 +323,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -358,9 +332,8 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
-
 
             </LinearLayout>
 
@@ -368,28 +341,26 @@
                 android:id="@+id/text_historia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="História"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="História"
                 android:textSize="17sp"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/primeiroBimestre_historia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1° Bimestre"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
                     android:layout_margin="7dp"
+                    android:text="1° Bimestre"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
 
                     />
 
@@ -397,41 +368,35 @@
                     android:id="@+id/segundoBimestre_historia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="2° Bimestre"
                     android:textSize="15dp"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terceiroBimestre_historia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="10dp"
-
+                    android:text="3° Bimestre"
                     android:textSize="15dp"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/quartoBimestre_historia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
+                    android:text="4° Bimestre"
                     android:textSize="15dp"
-                    />
-
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <EditText
                     android:id="@+id/edit_nota1_historia"
@@ -439,7 +404,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -448,7 +413,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -457,7 +422,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -466,9 +431,8 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
-
 
             </LinearLayout>
 
@@ -476,28 +440,26 @@
                 android:id="@+id/text_fisica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Física"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Física"
                 android:textSize="17sp"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/primeiroBimestre_fisica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1° Bimestre"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
                     android:layout_margin="10dp"
+                    android:text="1° Bimestre"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
 
                     />
 
@@ -505,41 +467,37 @@
                     android:id="@+id/segundoBimestre_fisica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="2° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terceiroBimestre_fisica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
-
+                    android:text="3° Bimestre"
                     android:textSize="15dp"
-                    />
+
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/quartoBimestre_fisica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4° Bimestre"
-                    android:textStyle="bold"
                     android:layout_margin="7dp"
+                    android:text="4° Bimestre"
                     android:textSize="15dp"
-                    />
-
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <EditText
                     android:id="@+id/edit_nota1_fisica"
@@ -547,7 +505,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -556,7 +514,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -565,7 +523,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -574,9 +532,8 @@
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     tools:ignore="MissingConstraints" />
-
 
             </LinearLayout>
 
@@ -584,8 +541,17 @@
                 android:id="@+id/bt_calcular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calcular"
                 android:layout_margin="20dp"
+                android:text="Calcular"
+
+                />
+
+            <Button
+                android:id="@+id/bt_limpar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Limpar"
 
                 />
 
@@ -593,8 +559,9 @@
                 android:id="@+id/bt_salvar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Salvar"
                 android:layout_margin="20dp"
+                android:enabled="false"
+                android:text="Salvar"
 
                 />
 
@@ -602,13 +569,11 @@
                 android:id="@+id/text_resultado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
                 android:text="Resultado"
                 android:textSize="20dp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:layout_margin="20dp"
-                />
-
+                android:textStyle="bold" />
 
         </LinearLayout>
 

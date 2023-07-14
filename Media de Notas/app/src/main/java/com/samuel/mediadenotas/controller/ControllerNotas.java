@@ -1,41 +1,43 @@
 package com.samuel.mediadenotas.controller;
 
-import com.samuel.mediadenotas.model.Portugues;
+import com.samuel.mediadenotas.model.Aluno;
 import com.samuel.mediadenotas.view.MainActivity;
 
 public class ControllerNotas {
 
-    Portugues portugues;
+    Aluno aluno;
 
-    public ControllerNotas(MainActivity mainActivity){
+    public ControllerNotas(MainActivity mainActivity) {
 
     }
-    
-    public String calculoPortugues(Portugues portugues){
 
-        double nota1 = Double.parseDouble(portugues.getEdit_nota1_portugues());
-        double nota2 = Double.parseDouble(portugues.getEdit_nota2_portugues());
-        double nota3 = Double.parseDouble(portugues.getEdit_nota3_portugues());
-        double nota4 = Double.parseDouble(portugues.getEdit_nota4_portugues());
+    public String calculo(Aluno aluno) {
 
-        double mediaPortugues = CalcularMedia(nota1, nota2, nota3, nota4);
+        double nota1 = Double.parseDouble(aluno.getEdit_nota1());
+        double nota2 = Double.parseDouble(aluno.getEdit_nota2());
+        double nota3 = Double.parseDouble(aluno.getEdit_nota3());
+        double nota4 = Double.parseDouble(aluno.getEdit_nota4());
+
+        double media = CalcularMedia(nota1, nota2, nota3, nota4);
         String resultado = null;
+        String disciplina = aluno.getDisciplina();
 
-        if (mediaPortugues >= 6) {
-            resultado = ("Portugues " + mediaPortugues + " Aluno Aprovado");
-        } else if (mediaPortugues < 6) {
-            resultado = ("Portugues " + mediaPortugues + " Aluno Reprovado");
+        aluno.setMedia(media);
+
+        if (media >= 60) {
+            resultado = (disciplina + media + " Aluno Aprovado");
+            aluno.setResultado(resultado);
+        } else if (media < 60) {
+            resultado = (disciplina + media + " Aluno Reprovado");
+            aluno.setResultado(resultado);
         }
         return resultado;
-
     }
 
     private double CalcularMedia(double nota1, double nota2, double nota3, double nota4) {
-        portugues = new Portugues();
-        portugues.setMediaPortugues((nota1 + nota2 + nota3 + nota4) / 4);
+        aluno = new Aluno();
+        aluno.setMedia((nota1 + nota2 + nota3 + nota4) / 4);
 
-        return portugues.getMediaPortugues();
+        return aluno.getMedia();
     }
-
-
 }
